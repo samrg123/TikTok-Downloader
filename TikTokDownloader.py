@@ -226,7 +226,7 @@ def downloadUrlThread_(url:str, preferredProxies:list[str]|None|None, proxyTimeo
         sanitizedMusicSuffix = f" - {sanitizedMusicName}" if sanitizedMusicName else ""
 
         if musicUrl:
-            downloadFiles.append( (musicUrl, f"{sanitizedSaveDir}/music{sanitizedMusicSuffix}.mp4") )
+            downloadFiles.append( (musicUrl, f"{sanitizedSaveDir}/music{sanitizedMusicSuffix}.mp3") )
     
         if musicCoverUrl:
             downloadFiles.append( (musicCoverUrl, f"{sanitizedSaveDir}/music cover{sanitizedMusicSuffix}.jpeg") )
